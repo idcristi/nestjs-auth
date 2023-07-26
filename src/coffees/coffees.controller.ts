@@ -1,3 +1,4 @@
+import { Permission } from './../iam/authorization/permission.type';
 import {
   Controller,
   Get,
@@ -15,7 +16,6 @@ import { ActiveUserData } from 'src/iam/interfaces/active-user-data.interface';
 import { Roles } from 'src/iam/authorization/decorators/roles.decorator';
 import { Role } from 'src/users/enums/role.enums';
 import { Permissions } from 'src/iam/authorization/decorators/permissions.decorator';
-import { Permission } from '../iam/authorization/permission.type';
 
 @Controller('coffees')
 export class CoffeesController {
